@@ -1,0 +1,139 @@
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" 
+	  content="Exemple de cours" />
+       
+    <title>Mon premier formulaire</title>
+
+
+  </head>
+     <header>
+      <a href="https://myriad-data.com/fr/">
+	
+	<img  class="img-responsive" src="assets/images/logo.png">
+      </a>
+    </header>
+    
+  <article>
+     <button (click)="registerUser()" > Afficher les informations</button>
+      
+
+
+
+
+
+
+    <h1>INFORMATIONS PERSONNELLES</h1>
+<fieldset>
+  <legend>Profil</legend>
+      <label for="customer">Nom:</label>
+      <input value ="{{text.contact.lastname}}" id="nom" placeholder="put your name" required autofocus/>
+      <br/>
+
+      <label for="phone">Prénom:</label>
+      <input  value ="{{text.contact.firstname }}"  id="prenom" required/>
+      <br/>
+      
+      <label for="email">Numéro de téléphone:</label>
+      <input value ="{{text.contact.phone }}"  id="adresse"/>
+      <br/>
+
+      <label for="number">E-mail:</label>
+      <input value ="{{text.contact.email }}"   id="mail"/>
+      <br/>
+    
+
+    </fieldset>
+     <h1>EXPERIENCES PROFESSIONNELLES </h1>
+      
+      <fieldset>
+	<legend>EMPLOIS</legend>
+     <label for="customer">Poste occupé 1 :</label>
+      <input value ="{{text.experiences[1].headline}}" id="nom" placeholder="put your name" required autofocus/>
+     
+
+      <label for="phone">Société:</label>
+      <input  value ="{{text.experiences[1].company}}"  id="prenom" required/>
+      
+      
+      <label for="email">date:</label>
+      <input value ="{{text.experiences[1].endDate}}"  id="adresse"/>
+      <br/>
+      <label for="customer">Poste occupé 2:</label>
+      <input value ="{{text.experiences[0].headline}}" id="nom" placeholder="put your name" required autofocus/>
+     
+
+      <label for="phone">Société:</label>
+      <input  value ="{{text.experiences[0].company}}"  id="prenom" required/>
+      
+      
+      <label for="email">date:</label>
+      <input value ="{{text.experiences[0].endDate}}"  id="adresse"/>
+      <br/>
+      
+  
+      </fieldset>
+      <fieldset>
+	<legend> STAGES</legend>
+	  <label for="customer">Poste occupé:</label>
+      <input value ="{{text.trainings[0].headline}}" id="nom" placeholder="put your name" required autofocus/>
+     
+
+      <label for="phone">Société:</label>
+      <input  value ="{{text.trainings[0].company}}"  id="prenom" required/>
+      
+      
+      <label for="email">date:</label>
+      <input value ="{{text.trainings[0].endDate}}"  id="adresse"/>
+      <br/>
+      
+      
+      </fieldset>  
+      <fieldset>    
+  <legend> SKILLS</legend>
+    <label for="customer"></label>
+      <input value ="{{text.skills[0].name }}" id="nom" required autofocus/>
+     
+
+      <label for="phone"></label>
+      <input  value ="{{text.skills[1].name }}"  id="prenom" required/>
+      
+      
+      
+      </fieldset>  
+      <h1>RECOMMENDATIONS </h1>
+      <fieldset>    
+  <legend> RECOMMENDATIONS</legend>
+    <label for="customer">   Poste:   </label>
+      <input value ="{{text.recommendationLists[0].recoList[0].headline }}" id="prenom" required/>
+      
+      <label for="phone">Expérience requises(années):</label>
+      <input  value ="{{text.recommendationLists[0].recoList[0].experienceRequired
+}}"  id="prenom" required/>
+      
+
+        <br/>
+
+      <label for="phone">Compagnie:</label>
+      <input  value ="{{text.recommendationLists[0].recoList[0].company}}"  id="prenom" required/>
+      
+        <label for="phone">Localisation:</label>
+      <input  value ="{{text.recommendationLists[0].recoList[0].localisation }}"  id="prenom" required/>
+      
+      
+      </fieldset>      
+          </article>
+            <footer>
+      <p>Ndèye Gagnessiry NDIAYE & Mohammed MADACHE Copyright © 2018 Stage MYRIAD <br/>
+      6 rue Royale, 75008 Paris   Tél. +33 (0) 3 20 77 84 27</p>
+    </footer>   
+      
+
+
+
+
+
+
+
+
